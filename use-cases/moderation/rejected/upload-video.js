@@ -13,7 +13,7 @@ cloudinary.uploader
     public_id: 'hot-tub',
     access_control: [{ access_type: 'token' }],
     moderation: 'google_video_moderation:possible',
-    notification_url:'https://jenbrissman-cld-webhooks.netlify.app/.netlify/functions/webhook_process_moderation_queues'
+    notification_url:'https://jenbrissman-cld-webhooks.netlify.app/.netlify/functions/webhook_process_google_moderation_queues'
   })
   .then(result => {
     console.log(result)
